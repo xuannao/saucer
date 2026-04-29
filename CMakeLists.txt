@@ -249,39 +249,39 @@ include("cmake/nuget.cmake")
 
 CPMFindPackage(
   NAME           lockpp
-  VERSION        3.2.0
-  GIT_REPOSITORY "https://github.com/Curve/lockpp"
+  GIT_TAG        master
+  GIT_REPOSITORY "https://github.com/xuannao/lockpp"
 )
 
 CPMFindPackage(
   NAME           coco
-  VERSION        4.3.0
-  GIT_REPOSITORY "https://github.com/Curve/coco"
+  GIT_TAG        master
+  GIT_REPOSITORY "https://github.com/xuannao/coco"
   OPTIONS        "coco_exceptions ${saucer_exceptions}"
 )
 
 CPMFindPackage(
   NAME           rebind
-  VERSION        5.3.1
-  GIT_REPOSITORY "https://github.com/Curve/rebind"
+  GIT_TAG        master
+  GIT_REPOSITORY "https://github.com/xuannao/rebind"
 )
 
 CPMFindPackage(
   NAME           ereignis
-  VERSION        6.3.0
-  GIT_REPOSITORY "https://github.com/Curve/ereignis"
+  GIT_TAG        master
+  GIT_REPOSITORY "https://github.com/xuannao/ereignis"
 )
 
 CPMFindPackage(
   NAME           flagpp
-  VERSION        3.1.0
-  GIT_REPOSITORY "https://github.com/Curve/flagpp"
+  GIT_TAG        master
+  GIT_REPOSITORY "https://github.com/xuannao/flagpp"
 )
 
 CPMFindPackage(
   NAME           polo
-  VERSION        1.0.2
-  GIT_REPOSITORY "https://github.com/Curve/polo"
+  GIT_TAG        master
+  GIT_REPOSITORY "https://github.com/xuannao/polo"
 )
 
 CPMFindPackage(
@@ -469,7 +469,7 @@ foreach(target IN LISTS saucer_blacklist)
     saucer_message(WARNING "Package-Config not supported with current configuration (${target})")
     return()
   endif()
-endforeach()`
+endforeach()
 
 if(NOT PACKAGEPROJECT)
     return()
