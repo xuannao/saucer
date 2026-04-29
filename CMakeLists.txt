@@ -469,7 +469,11 @@ foreach(target IN LISTS saucer_blacklist)
     saucer_message(WARNING "Package-Config not supported with current configuration (${target})")
     return()
   endif()
-endforeach()
+endforeach()`
+
+if(NOT PACKAGEPROJECT)
+    return()
+endif()
 
 CPMFindPackage(
   NAME           PackageProject
